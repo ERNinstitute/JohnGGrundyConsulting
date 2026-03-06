@@ -265,17 +265,66 @@
       background: var(--accentSoft);
       border-color: rgba(30,64,175,.25);
     }
-    
+
+    .supportBand{
+      padding:20px;
+      margin-top:18px;
+    }
+
+    .support-copy{
+      margin:10px 0 14px;
+      color:var(--muted);
+      max-width:70ch;
+    }
+
+    .support-buttons{
+      display:flex;
+      gap:12px;
+      flex-wrap:wrap;
+      margin-top:4px;
+    }
+
+    .support-btn{
+      display:inline-flex;
+      align-items:center;
+      gap:10px;
+      padding:12px 16px;
+      border-radius:12px;
+      border:1px solid var(--border);
+      background:var(--surface);
+      color:var(--text);
+      font-size:14px;
+      font-weight:600;
+      text-decoration:none;
+      box-shadow: 0 6px 14px rgba(15,23,42,.05);
+      transition: transform .15s ease, box-shadow .15s ease, border-color .15s ease;
+    }
+
+    .support-btn:hover{
+      transform:translateY(-1px);
+      box-shadow: var(--shadow);
+      text-decoration:none;
+    }
+
+    .support-btn img{
+      height:20px;
+      width:auto;
+      display:block;
+      flex:0 0 auto;
+    }
+
+    .support-btn.stripe:hover{
+      border-color: rgba(99,91,255,.35);
+    }
+
+    .support-btn.paypal:hover{
+      border-color: rgba(0,48,135,.35);
+    }
+
     /* Fix anchor offset for sticky header */
-section[id] {
-  scroll-margin-top: 80px;
-}
-
-
-
-
-
-}
+    section[id] {
+      scroll-margin-top: 80px;
+    }
 
 </style>
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
@@ -444,6 +493,29 @@ section[id] {
         </p>
 </details>
 </section>
+
+<!-- SUPPORT -->
+<section class="card supportBand" id="support">
+<div class="section-title">
+<h2 style="margin:0;">Support this work</h2>
+<div class="kicker">Optional</div>
+</div>
+<p class="support-copy">
+        If you find my work useful and want to help fund independent research, writing, and future projects, support is appreciated but never expected.
+      </p>
+<div class="support-buttons">
+<a class="support-btn stripe" href="https://buy.stripe.com/fZuaEQ5F0cx5cqefeVfMA00" target="_blank" rel="noopener noreferrer">
+<img alt="Stripe" src="stripe-wordmark.svg"/>
+<span>Click Here</span>
+</a>
+<a class="support-btn paypal" href="https://www.paypal.com/ncp/payment/6ZDP4G652AX4L" target="_blank" rel="noopener noreferrer">
+<img alt="PayPal" src="paypal-wordmark.svg"/>
+<span>Click Here</span>
+</a>
+</div>
+<p class="support-note" style="font-size:13px;">Supports cards, Apple Pay, Cash App, and other secure payment methods.</p>
+</section>
+
 <!-- CONTACT -->
 <section class="card contactBand" id="contact">
 <div class="section-title">
