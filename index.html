@@ -1,42 +1,40 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1" name="viewport"/>
-<meta content="Independent scientific and methodological reviews for projects built on complex empirical, theoretical, or mechanistic claims." name="description"/>
-<title>Independent Scientific &amp; Methodological Review — John G. Grundy, Ph.D., FPsyS.</title>
+<meta content="Independent scientific and methodological diligence for investors, founders, institutions, and decision-makers evaluating science-heavy products, platforms, and claims." name="description"/>
+<title>Scientific Diligence &amp; Independent Review — John G. Grundy, Ph.D., FPsyS</title>
 <style>
     :root{
-      --bg:#f7f8fb;          /* paper */
-      --surface:#ffffff;     /* cards */
-      --text:#0f172a;        /* ink */
-      --muted:#475569;       /* slate */
-      --border:#e5e7eb;      /* light gray */
-      --accent:#1e40af;      /* muted blue */
-      --accentSoft:#eff6ff;  /* pale blue */
-      --max: 980px;
+      --bg:#f7f8fb;
+      --surface:#ffffff;
+      --text:#0f172a;
+      --muted:#475569;
+      --border:#e5e7eb;
+      --accent:#1e40af;
+      --accentSoft:#eff6ff;
+      --max: 1040px;
       --radius: 14px;
       --shadow: 0 10px 24px rgba(15, 23, 42, .08);
     }
 
     *{box-sizing:border-box}
-
+    html{scroll-behavior:smooth}
     body{
       margin:0;
       font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
       color:var(--text);
       background: var(--bg);
-      line-height:1.55;
+      line-height:1.58;
     }
-
     a{color:var(--accent); text-decoration:none}
     a:hover{text-decoration:underline}
 
     header{
       position:sticky;
       top:0;
-      background: rgba(247,248,251,.9);
+      background: rgba(247,248,251,.92);
       backdrop-filter: blur(10px);
       border-bottom:1px solid var(--border);
       z-index:10;
@@ -56,23 +54,10 @@
       display:flex;
       align-items:center;
       gap:12px;
-      min-width: 220px;
+      min-width:220px;
     }
-
-    .brandLogo{
-      height:40px;
-      width:auto;
-      display:block;
-      flex: 0 0 auto;
-    }
-
-    .brandText{
-      display:flex;
-      flex-direction:column;
-      gap:2px;
-      line-height:1.15;
-    }
-
+    .brandLogo{height:40px; width:auto; display:block; flex:0 0 auto}
+    .brandText{display:flex; flex-direction:column; gap:2px; line-height:1.15}
     .brandText strong{font-size:15px; letter-spacing:.2px}
     .brandText span{font-size:13px; color:var(--muted)}
 
@@ -87,464 +72,346 @@
     .navlinks a{color:var(--muted)}
     .navlinks a:hover{color:var(--text)}
 
-    main{
-      max-width:var(--max);
-      margin:0 auto;
-      padding:30px 18px 56px;
-    }
+    main{max-width:var(--max); margin:0 auto; padding:30px 18px 56px}
+    .card{background:var(--surface); border:1px solid var(--border); border-radius:var(--radius); box-shadow:var(--shadow)}
+    .section-card{padding:24px}
+    .brief{background:transparent; border-left:4px solid rgba(30,64,175,.35); padding:4px 0 4px 14px; margin-top:18px}
 
-    .card{
-      background: var(--surface);
-      border:1px solid var(--border);
-      border-radius: var(--radius);
-      box-shadow: var(--shadow);
-    }
-
-    h1{
-      font-size:34px;
-      line-height:1.15;
-      margin:0 0 10px;
-      letter-spacing:-.3px;
-    }
-
-    h2{margin:0 0 10px; font-size:18px}
-    h3{margin:14px 0 8px; font-size:15px}
-
-    .sub{
-      color:var(--muted);
-      font-size:16px;
-      margin:0 0 16px;
-      max-width:70ch;
-    }
-
-    .hero{
-      padding:22px;
-    }
-
-    .heroTop{
-      display:flex;
-      flex-wrap:wrap;
-      gap:10px 14px;
-      align-items:baseline;
-      justify-content:space-between;
-      margin-bottom:6px;
-    }
-
-    .nameLine{
-      font-size:16px;
-      color:var(--muted);
-      font-weight:600;
-    }
-
-    .pillrow{display:flex; flex-wrap:wrap; gap:10px; margin:12px 0 0}
-    .pill{
-      font-size:12px;
-      color:var(--muted);
-      border:1px solid var(--border);
-      padding:6px 10px;
-      border-radius:999px;
-      background:var(--surface);
-    }
-
-    .cta{
-      display:flex;
-      gap:10px;
-      flex-wrap:wrap;
-      margin-top:14px;
-    }
-
-    .btn{
-      display:inline-flex;
-      align-items:center;
-      justify-content:center;
-      gap:8px;
-      padding:10px 12px;
-      border-radius: 12px;
-      font-size:14px;
-      border:1px solid var(--border);
-      background:var(--surface);
-      color:var(--text);
-    }
-
-    .btn.primary{
-      border-color: rgba(30,64,175,.35);
-      background: var(--accentSoft);
-      color: var(--accent);
-    }
-
-    .btn:hover{transform: translateY(-1px)}
-
-    .grid{
-      display:grid;
-      grid-template-columns: 1fr 1fr;
-      gap:16px;
-      margin-top:16px;
-    }
-    @media (max-width: 900px){
-      .grid{grid-template-columns:1fr}
-      .nav{align-items:flex-start}
-    }
-
-    .section-card{padding:22px}
-
-    .kicker{
-      font-size:12px;
-      color:var(--muted);
-      text-transform:uppercase;
-      letter-spacing:.12em;
-      font-weight:700;
-    }
-
-    /* Differentiation: brief sections are not cards */
-    .brief{
-      background: transparent;
-      border-left: 4px solid rgba(30,64,175,.35);
-      padding: 4px 0 4px 14px;
-      margin-top: 18px;
-    }
-
-    .section-title{
-      display:flex;
-      align-items:baseline;
-      justify-content:space-between;
-      gap:12px;
-      flex-wrap:wrap;
-    }
-
-    ul{
-      margin:0 0 10px;
-      padding-left:18px;
-      color:var(--muted);
-    }
+    h1{font-size:40px; line-height:1.08; margin:0 0 12px; letter-spacing:-.5px}
+    h2{margin:0 0 10px; font-size:20px}
+    h3{margin:0 0 8px; font-size:15px}
     p{margin:0 0 10px}
+    ul{margin:0; padding-left:18px; color:var(--muted)}
 
-    .tiers{
-      display:grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap:12px;
-      margin-top:10px;
-    }
-    @media (max-width: 900px){
-      .tiers{grid-template-columns:1fr}
-    }
-    .tier{
-      padding:14px;
-      border:1px solid var(--border);
-      border-radius: 12px;
-      background: var(--surface);
-    }
-    .tier strong{display:block; font-size:14px; margin-bottom:6px}
-    .tier span{display:block; color:var(--muted); font-size:13px}
+    .hero{padding:28px}
+    .heroTop{display:flex; flex-wrap:wrap; gap:10px 14px; align-items:baseline; justify-content:space-between; margin-bottom:6px}
+    .kicker{font-size:12px; color:var(--muted); text-transform:uppercase; letter-spacing:.12em; font-weight:700}
+    .nameLine{font-size:16px; color:var(--muted); font-weight:600}
+    .sub{color:var(--muted); font-size:17px; margin:0 0 16px; max-width:72ch}
 
-    details{
-      margin-top: 10px;
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: 12px;
-      padding: 12px 14px;
-      box-shadow: 0 6px 14px rgba(15,23,42,.05);
-    }
-    summary{
-      cursor: pointer;
-      font-weight: 700;
-    }
+    .heroGrid{display:grid; grid-template-columns: minmax(0,1.6fr) minmax(280px,1fr); gap:18px; align-items:start}
+    .heroAside{border:1px solid var(--border); border-radius:14px; padding:16px; background:linear-gradient(180deg,#fff,#fbfdff)}
+    .heroAside h3{font-size:14px; text-transform:uppercase; letter-spacing:.08em; color:var(--muted); margin-bottom:10px}
+    .heroAside ul{font-size:14px}
+
+    .pillrow{display:flex; flex-wrap:wrap; gap:10px; margin:14px 0 0}
+    .pill{font-size:12px; color:var(--muted); border:1px solid var(--border); padding:6px 10px; border-radius:999px; background:var(--surface)}
+
+    .cta{display:flex; gap:10px; flex-wrap:wrap; margin-top:16px}
+    .btn{display:inline-flex; align-items:center; justify-content:center; gap:8px; padding:11px 14px; border-radius:12px; font-size:14px; border:1px solid var(--border); background:var(--surface); color:var(--text); font-weight:600}
+    .btn.primary{border-color: rgba(30,64,175,.35); background: var(--accentSoft); color: var(--accent)}
+    .btn:hover{transform:translateY(-1px); text-decoration:none}
+
+    .grid2{display:grid; grid-template-columns:1fr 1fr; gap:16px; margin-top:16px}
+    .grid3{display:grid; grid-template-columns:repeat(3,1fr); gap:14px; margin-top:12px}
+    .section-title{display:flex; align-items:baseline; justify-content:space-between; gap:12px; flex-wrap:wrap}
+
+    .stat{padding:16px; border:1px solid var(--border); border-radius:12px; background:var(--surface)}
+    .stat strong{display:block; font-size:15px; margin-bottom:6px}
+    .stat span{display:block; color:var(--muted); font-size:14px}
+
+    .split{display:grid; grid-template-columns:minmax(0,1.25fr) minmax(280px,.85fr); gap:18px; margin-top:16px}
+    .note{color:var(--muted); font-size:14px}
+
+    .credWrap{margin-top:14px; display:grid; gap:14px}
+    .credCard{padding:18px}
+    .credImage{width:100%; height:auto; display:block; border-radius:12px; border:1px solid var(--border)}
+    .credComposite{width:100%; height:auto; display:block; border-radius:12px; border:1px solid var(--border); background:#fff}
+    .credCaption{margin:0 0 10px; color:var(--muted); font-size:13px; line-height:1.45}
+    .credStack{display:grid; grid-template-columns:1fr; gap:18px; margin-top:8px}
+    .credIntro{max-width:78ch}
+    .credIntro p{color:var(--muted)}
+    .credWide .credComposite{width:100%; max-width:none}
+
+    details{margin-top:10px; background:var(--surface); border:1px solid var(--border); border-radius:12px; padding:12px 14px; box-shadow:0 6px 14px rgba(15,23,42,.05)}
+    summary{cursor:pointer; font-weight:700}
     details p, details ul{color:var(--muted)}
     details[open] summary{margin-bottom:8px}
 
-    footer{
-      max-width:var(--max);
-      margin:0 auto;
-      padding:18px 18px 44px;
-      color:var(--muted);
-      font-size:12px;
-    }
+    .contactBand{padding:22px; margin-top:18px; background:var(--accentSoft); border-color:rgba(30,64,175,.25)}
+    .supportBand{padding:20px; margin-top:18px}
+    .support-copy{margin:10px 0 14px; color:var(--muted); max-width:70ch}
+    .support-buttons{display:flex; gap:12px; flex-wrap:wrap; margin-top:4px}
+    .support-btn{display:inline-flex; align-items:center; gap:10px; padding:12px 16px; border-radius:12px; border:1px solid var(--border); background:var(--surface); color:var(--text); font-size:14px; font-weight:600; text-decoration:none; box-shadow:0 6px 14px rgba(15,23,42,.05); transition: transform .15s ease, box-shadow .15s ease, border-color .15s ease}
+    .support-btn:hover{transform:translateY(-1px); box-shadow:var(--shadow); text-decoration:none}
+    .support-btn img{height:20px; width:auto; display:block; flex:0 0 auto}
+    .support-btn.stripe:hover{border-color: rgba(99,91,255,.35)}
+    .support-btn.paypal:hover{border-color: rgba(0,48,135,.35)}
 
-    .contactBand{
-      padding:20px;
-      margin-top:18px;
-      background: var(--accentSoft);
-      border-color: rgba(30,64,175,.25);
-    }
+    footer{max-width:var(--max); margin:0 auto; padding:18px 18px 44px; color:var(--muted); font-size:12px}
+    section[id]{scroll-margin-top:80px}
 
-    .supportBand{
-      padding:20px;
-      margin-top:18px;
+    @media (max-width: 900px){
+      .nav{align-items:flex-start}
+      .heroGrid,.grid2,.grid3,.split{grid-template-columns:1fr}
+      h1{font-size:34px}
     }
-
-    .support-copy{
-      margin:10px 0 14px;
-      color:var(--muted);
-      max-width:70ch;
-    }
-
-    .support-buttons{
-      display:flex;
-      gap:12px;
-      flex-wrap:wrap;
-      margin-top:4px;
-    }
-
-    .support-btn{
-      display:inline-flex;
-      align-items:center;
-      gap:10px;
-      padding:12px 16px;
-      border-radius:12px;
-      border:1px solid var(--border);
-      background:var(--surface);
-      color:var(--text);
-      font-size:14px;
-      font-weight:600;
-      text-decoration:none;
-      box-shadow: 0 6px 14px rgba(15,23,42,.05);
-      transition: transform .15s ease, box-shadow .15s ease, border-color .15s ease;
-    }
-
-    .support-btn:hover{
-      transform:translateY(-1px);
-      box-shadow: var(--shadow);
-      text-decoration:none;
-    }
-
-    .support-btn img{
-      height:20px;
-      width:auto;
-      display:block;
-      flex:0 0 auto;
-    }
-
-    .support-btn.stripe:hover{
-      border-color: rgba(99,91,255,.35);
-    }
-
-    .support-btn.paypal:hover{
-      border-color: rgba(0,48,135,.35);
-    }
-
-    /* Fix anchor offset for sticky header */
-    section[id] {
-      scroll-margin-top: 80px;
-    }
-
 </style>
-  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
 </head>
-    
+
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-GD60K6BCNZ"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
+  function gtag(){dataLayer.push(arguments);} 
   gtag('js', new Date());
-
   gtag('config', 'G-GD60K6BCNZ');
-</script> 
-    
+</script>
+
 <body>
 <header>
-<div class="nav">
-<div class="brand">
-<img alt="John G. Grundy" class="brandLogo" src="JGGlogo.svg"/>
-<div class="brandText">
-<strong>Independent Scientific &amp; Methodological Review</strong>
-<span>John G. Grundy, Ph.D., FPsyS</span>
-</div>
-</div>
-<nav aria-label="Primary" class="navlinks">
-<a href="#service">Service</a>
-<a href="#use-cases">Use cases</a>
-<a href="#deliverables">Deliverables</a>
-<a href="#independence">Independence</a>
-<a href="#contact">Contact</a>
-</nav>
-</div>
-</header>
-<main>
-<!-- HERO -->
-<section class="card hero">
-<div class="heroTop">
-<div class="kicker">Independent second opinion</div>
-<div class="nameLine">John G. Grundy, Ph.D., FPsyS</div>
-</div>
-<h1>Independent scientific and methodological review.</h1>
-<p class="sub">
-        I provide independent reviews for projects built on complex empirical, theoretical, or mechanistic claims—focused on
-        claim clarity, assumptions, evidence–inference alignment, and plausible failure modes.
-      </p>
-<p style="color:var(--muted); font-size:14px; margin:0 0 10px; max-width:70ch;">
-        Former academic researcher • Peer reviewer • Mechanistic modeling specialist
-      </p>
-<div class="cta">
-<a class="btn primary" href="#contact">Email to request a scoped review discussion</a>
-<a class="btn" href="#deliverables">See deliverables</a>
-</div>
-<div class="pillrow">
-<span class="pill">Not strategy</span>
-<span class="pill">Not endorsement</span>
-<span class="pill">Written documentation</span>
-<span class="pill">Audit-ready clarity</span>
-</div>
-</section>
-<!-- WHAT I DO -->
-<section class="brief" id="service">
-<div class="section-title">
-<h2 style="margin:0;">What I do</h2>
-<div class="kicker">Claim → assumptions → inference</div>
-</div>
-<ul style="margin-top:8px;">
-<li>Clarify what a claim actually asserts (and what it doesn’t).</li>
-<li>Surface key assumptions—explicit and implicit.</li>
-<li>Stress-test evidence → inference alignment.</li>
-<li>Identify plausible failure modes and decision-relevant uncertainties.</li>
-</ul>
-<p style="color:var(--muted); margin:0;">
-        The goal is not certainty, but clarity under scrutiny.
-      </p>
-</section>
-<!-- IS / IS NOT -->
-<section aria-label="Service definition" class="grid">
-<div class="card section-card">
-<div class="kicker">This is</div>
-<ul style="margin-top:10px;">
-<li>Structured, written second-opinion review</li>
-<li>Explicit about limits and uncertainty</li>
-<li>Readable by technical and non-technical stakeholders</li>
-<li>Documentation you can retain as a record</li>
-</ul>
-</div>
-<div class="card section-card">
-<div class="kicker">This is not</div>
-<ul style="margin-top:10px;">
-<li>Business/market/investment advice</li>
-<li>Endorsement or advocacy</li>
-<li>Ghostwriting or promotional copy</li>
-<li>A substitute for running studies/experiments</li>
-</ul>
-</div>
-</section>
-<!-- USE CASES -->
-<section class="card section-card" id="use-cases" style="margin-top:16px;">
-<div class="section-title">
-<h2 style="margin:0;">When this is useful</h2>
-<div class="kicker">Decision support</div>
-</div>
-<ul style="margin-top:10px;">
-<li>Pre-funding or pre-investment technical review</li>
-<li>Internal validation of research-driven projects</li>
-<li>Grant or proposal vetting</li>
-<li>Policy- or compliance-relevant analysis</li>
-<li>Litigation-adjacent or expert-style methodological review</li>
-</ul>
-<p style="color:var(--muted); margin:0;">
-        In many cases, the value is identifying weaknesses before they become public, costly, or reputationally damaging.
-      </p>
-</section>
-<!-- DELIVERABLES -->
-<section class="card section-card" id="deliverables" style="margin-top:16px;">
-<div class="section-title">
-<h2 style="margin:0;">Deliverables</h2>
-<div class="kicker">Tiered depth</div>
-</div>
-<p style="color:var(--muted); margin-top:8px; max-width:75ch;">
-        Clients receive a written review memo prepared for both technical and non-technical readers.
-        Reviews explicitly separate facts, assumptions, evidence, and inference.
-      </p>
-<div aria-label="Deliverable tiers" class="tiers">
-<div class="tier">
-<strong>Executive Review (3–5 pages)</strong>
-<span>High-level assessment of claim clarity, core assumptions, major risks, and decision-relevant uncertainties.</span>
-</div>
-<div class="tier">
-<strong>Standard Review (8–12 pages)</strong>
-<span>Detailed analysis of assumptions, methods, inference, and failure modes for internal diligence or advisory use.</span>
-</div>
-<div class="tier">
-<strong>Comprehensive Review (15–20 pages)</strong>
-<span>Full methodological stress-testing and documentation for legal, regulatory, or high-stakes institutional contexts.</span>
-</div>
-</div>
-<p style="color:var(--muted); margin:12px 0 0;">
-        If desired, I can also provide a one-page <em>Decision Brief</em> distilled from the memo for fast executive review.
-      </p>
-<p style="color:var(--muted); margin:12px 0 0; max-width:75ch;">
-        Engagement scope and pricing are determined after initial review of materials. Reviews are fixed-fee and scaled to complexity, not hourly.
-      </p>
-</section>
-<!-- INDEPENDENCE -->
-<section class="brief" id="independence">
-<div class="section-title">
-<h2 style="margin:0;">Independence</h2>
-<div class="kicker">Scope + documentation</div>
-</div>
-<details>
-<summary>How engagements are scoped</summary>
-<ul>
-<li>Scope is defined in advance.</li>
-<li>Conclusions are not pre-specified.</li>
-<li>Findings are documented accurately and in full in the written review.</li>
-<li>How the review is used afterward is the client’s responsibility.</li>
-</ul>
-</details>
-<details>
-<summary>Relationship to ERN Institute</summary>
-<p style="margin:0;">
-          I am the founder of ERN Institute (scholarly publishing and research infrastructure). This review service is offered
-          independently and is not conducted on behalf of ERN Institute or its journals.
-        </p>
-</details>
-</section>
-
-<!-- SUPPORT -->
-<section class="card supportBand" id="support">
-<div class="section-title">
-<h2 style="margin:0;">Support this work</h2>
-<div class="kicker">Optional</div>
-</div>
-<p class="support-copy">
-        If you find my work useful and want to help fund independent research, writing, and future projects, support is appreciated but never expected.
-      </p>
-<div class="support-buttons">
-<a class="support-btn stripe" href="https://buy.stripe.com/fZuaEQ5F0cx5cqefeVfMA00" target="_blank" rel="noopener noreferrer">
-<img alt="Stripe" src="stripe-wordmark.svg"/>
-<span>Click Here</span>
-</a>
-<a class="support-btn paypal" href="https://www.paypal.com/ncp/payment/6ZDP4G652AX4L" target="_blank" rel="noopener noreferrer">
-<img alt="PayPal" src="paypal-wordmark.svg"/>
-<span>Click Here</span>
-</a>
-</div>
-<p class="support-note" style="font-size:13px;">Supports cards, Apple Pay, Cash App, and other secure payment methods.</p>
-</section>
-
-<!-- CONTACT -->
-<section class="card contactBand" id="contact">
-<div class="section-title">
-<h2 style="margin:0;">Contact</h2>
-<div class="kicker">Scoped inquiries only</div>
-</div>
-<p style="margin:10px 0 12px; color:var(--muted); max-width:70ch;">
-        If you’re considering an independent scientific or methodological review, email me with:
-        (1) what you’re evaluating,
-        (2) what decision it informs,
-        and (3) what materials are available.
-      </p>
-<p style="margin:0 0 12px; font-size:15px;">
-<strong>Email:</strong>
-<a href="mailto:john@johnggrundy.com">john@johnggrundy.com</a>
-</p>
-<p style="margin:0; color:var(--muted); font-size:13px;">
-        If it’s not a fit, I’ll say so quickly.
-      </p>
-</section>
-</main>
-<footer>
-<div>© <span id="y"></span> John G. Grundy. Independent Scientific &amp; Methodological Review.</div>
-<div style="margin-top:8px;">
-      This site describes an independent review service. It does not provide legal, investment, medical, or clinical advice.
+  <div class="nav">
+    <div class="brand">
+      <img alt="John G. Grundy" class="brandLogo" src="JGGlogo.svg"/>
+      <div class="brandText">
+        <strong>Scientific Diligence &amp; Independent Review</strong>
+        <span>John G. Grundy, Ph.D., FPsyS</span>
+      </div>
     </div>
+    <nav aria-label="Primary" class="navlinks">
+      <a href="#service">Service</a>
+      <a href="#fit">Who this is for</a>
+      <a href="#deliverables">Deliverables</a>
+      <a href="#credibility">Background</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="card hero">
+    <div class="heroTop">
+      <div class="kicker">Independent second opinion for high-stakes decisions</div>
+      <div class="nameLine">John G. Grundy, Ph.D., FPsyS</div>
+    </div>
+
+    <div class="heroGrid">
+      <div>
+        <h1>Scientific diligence before you commit capital, credibility, or institutional support.</h1>
+        <p class="sub">
+          I provide independent scientific and methodological review for investors, founders, institutions, and decision-makers evaluating products, platforms, or proposals built on complex empirical, theoretical, or mechanistic claims.
+        </p>
+        <p style="color:var(--muted); font-size:15px; margin:0 0 10px; max-width:72ch;">
+          The focus is not promotional positioning. It is analytical clarity: what the claim actually says, what assumptions it depends on, whether the evidence supports the inference being made, and where meaningful technical risk may still sit.
+        </p>
+
+        <div class="cta">
+          <a class="btn primary" href="#contact">Request a scoped review discussion</a>
+          <a class="btn" href="#deliverables">See deliverables</a>
+        </div>
+
+        <div class="pillrow">
+          <span class="pill">Pre-investment review</span>
+          <span class="pill">Science-heavy products</span>
+          <span class="pill">Written decision support</span>
+          <span class="pill">Independent analysis</span>
+          <span class="pill">Not investment advice</span>
+        </div>
+      </div>
+
+      <aside class="heroAside">
+        <h3>Typical questions clients need answered</h3>
+        <ul>
+          <li>Is this scientific claim precise, overstated, or underspecified?</li>
+          <li>Do the cited findings actually support the proposed product or mechanism?</li>
+          <li>What hidden assumptions would have to be true for this to work as presented?</li>
+          <li>Where are the strongest technical failure modes or inference gaps?</li>
+          <li>What should a non-specialist decision-maker understand before proceeding?</li>
+        </ul>
+      </aside>
+    </div>
+  </section>
+
+  <section class="brief" id="service">
+    <div class="section-title">
+      <h2 style="margin:0;">What I do</h2>
+      <div class="kicker">Claim → assumptions → evidence → inference</div>
+    </div>
+    <ul style="margin-top:8px;">
+      <li>Clarify what a scientific or technical claim actually asserts, and what it does not.</li>
+      <li>Surface key assumptions, including implicit assumptions that often go untested.</li>
+      <li>Stress-test the alignment between evidence, mechanism, methods, and inference.</li>
+      <li>Identify plausible failure modes, sources of overclaiming, and decision-relevant uncertainty.</li>
+    </ul>
+    <p style="color:var(--muted); margin-top:10px;">The aim is not certainty. It is cleaner judgment under scrutiny.</p>
+  </section>
+
+  <section class="grid2" aria-label="Service definition">
+    <div class="card section-card">
+      <div class="kicker">This is</div>
+      <ul style="margin-top:10px;">
+        <li>Independent written diligence</li>
+        <li>Technical review that can be shared internally</li>
+        <li>Explicit separation of facts, assumptions, uncertainty, and inference</li>
+        <li>Readable by both technical and non-technical stakeholders</li>
+      </ul>
+    </div>
+    <div class="card section-card">
+      <div class="kicker">This is not</div>
+      <ul style="margin-top:10px;">
+        <li>Investment, legal, medical, or regulatory advice</li>
+        <li>Advocacy, endorsement, or founder-side promotion</li>
+        <li>Ghostwriting or marketing copy</li>
+        <li>A substitute for experiments, validation work, or specialist counsel</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="card section-card" id="fit" style="margin-top:16px;">
+    <div class="section-title">
+      <h2 style="margin:0;">Who this is for</h2>
+      <div class="kicker">Best-fit buyers</div>
+    </div>
+    <div class="grid3">
+      <div class="stat">
+        <strong>Investors and diligence teams</strong>
+        <span>Before funding a science-heavy product, platform, intervention, assessment, or mechanism-based pitch.</span>
+      </div>
+      <div class="stat">
+        <strong>Founders and operators</strong>
+        <span>When you need an independent stress test before fundraising, launch, licensing, or external scrutiny.</span>
+      </div>
+      <div class="stat">
+        <strong>Institutions and advisors</strong>
+        <span>For internal review, proposal vetting, policy-relevant analysis, or litigation-adjacent methodological assessment.</span>
+      </div>
+    </div>
+    <p class="note" style="margin-top:14px; max-width:78ch;">
+      I am typically most useful when the core issue is not market size or business strategy, but whether the underlying science, methods, or mechanistic reasoning can bear the weight being placed on them.
+    </p>
+  </section>
+
+  <section class="split" id="deliverables">
+    <div class="card section-card">
+      <div class="section-title">
+        <h2 style="margin:0;">Deliverables</h2>
+        <div class="kicker">Tiered depth</div>
+      </div>
+      <p class="note" style="margin-top:8px; max-width:75ch;">
+        Clients receive a written review memo prepared for internal decision-making. Reviews explicitly separate claims, assumptions, evidence, methodological issues, uncertainty, and bottom-line implications.
+      </p>
+      <div class="grid3" style="margin-top:14px;">
+        <div class="stat">
+          <strong>Executive Review</strong>
+          <span>3–5 pages. Focused assessment of claim clarity, major assumptions, core risks, and decision-relevant uncertainty.</span>
+        </div>
+        <div class="stat">
+          <strong>Standard Review</strong>
+          <span>8–12 pages. Detailed analysis of methods, evidence, inference quality, and probable failure points.</span>
+        </div>
+        <div class="stat">
+          <strong>Comprehensive Review</strong>
+          <span>15–20 pages. Full stress test for high-stakes internal, legal, policy, or institutional contexts.</span>
+        </div>
+      </div>
+      <p class="note" style="margin-top:14px;">
+        A one-page decision brief can also be provided for executive circulation.
+      </p>
+      <p class="note">
+        Scope and fixed-fee pricing are set after initial review of materials. Engagements are priced by complexity, not hourly time.
+      </p>
+    </div>
+
+    <div class="card section-card">
+      <div class="section-title">
+        <h2 style="margin:0;">Engagement process</h2>
+        <div class="kicker">Simple and scoped</div>
+      </div>
+      <div class="grid3" style="grid-template-columns:1fr;">
+        <div class="stat">
+          <strong>1. Initial inquiry</strong>
+          <span>You send the claim, product, or proposal being evaluated, what decision it informs, and what materials exist.</span>
+        </div>
+        <div class="stat">
+          <strong>2. Scope and fit</strong>
+          <span>I confirm whether the question is a fit for this service, define scope, and set a fixed fee.</span>
+        </div>
+        <div class="stat">
+          <strong>3. Written review</strong>
+          <span>You receive a memo designed to clarify technical strength, inferential limits, and where caution is warranted.</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="card section-card" id="credibility" style="margin-top:16px;">
+    <div class="section-title">
+      <h2 style="margin:0;">Why me</h2>
+      <div class="kicker">Scientific judgment, not sales language</div>
+    </div>
+    <div class="credStack">
+      <div class="credIntro">
+        <p class="note" style="max-width:78ch;">
+          My background is in cognitive science and psychology, with extensive experience evaluating empirical claims, theoretical framing, mechanism-based arguments, and methodological quality. I have worked as an academic researcher, published and peer-reviewed scientific work, and built a reputation around theory development and big-picture scientific interpretation.
+        </p>
+        <p class="note" style="max-width:78ch; margin-top:10px;">
+          That makes this service most valuable when a decision turns on whether a scientific narrative is actually well-supported, or simply sounds persuasive on the surface.
+        </p>
+      </div>
+
+      <div class="card credCard">
+        <h3>What you should expect from my review</h3>
+        <ul>
+          <li>Clear distinctions between established findings, extrapolation, and speculation</li>
+          <li>Attention to mechanistic plausibility rather than just headline claims</li>
+          <li>A written record that can be retained, revisited, and shared internally</li>
+          <li>Direct language when something is weak, overstated, or unsupported</li>
+        </ul>
+      </div>
+
+      <div class="card credCard credWide">
+        <h3 style="margin-bottom:8px;">Selected indicators of research impact and public engagement</h3>
+        <p class="credCaption">A compact snapshot of publications, citation profile, research visibility, and selected media coverage relevant to independent scientific review.</p>
+        <img alt="Selected indicators of research impact and public engagement" class="credComposite" src="qualifications_and_media_overview.png"/>
+      </div>
+    </div>
+  </section>
+
+  <section class="brief" id="independence">
+    <div class="section-title">
+      <h2 style="margin:0;">Independence and scope</h2>
+      <div class="kicker">Documented, bounded, explicit</div>
+    </div>
+    <details>
+      <summary>How engagements are scoped</summary>
+      <ul>
+        <li>Scope is defined in advance.</li>
+        <li>Conclusions are not pre-specified.</li>
+        <li>Findings are documented accurately and in full in the written review.</li>
+        <li>How the review is used after delivery is the client’s responsibility.</li>
+      </ul>
+    </details>
+    <details>
+      <summary>Relationship to ERN Institute</summary>
+      <p style="margin:0;">
+        I am the founder of ERN Institute, a separate scholarly publishing and research infrastructure initiative. This review service is offered independently and is not conducted on behalf of ERN Institute or its journals.
+      </p>
+    </details>
+  </section>
+
+  <section class="card contactBand" id="contact">
+    <div class="section-title">
+      <h2 style="margin:0;">Contact</h2>
+      <div class="kicker">Scoped inquiries only</div>
+    </div>
+    <p style="margin:10px 0 12px; color:var(--muted); max-width:72ch;">
+      If you are considering a review, email me with: (1) what is being evaluated, (2) what decision it informs, and (3) what materials are currently available. If it is not a fit, I will say so quickly.
+    </p>
+    <p style="margin:0 0 12px; font-size:15px;">
+      <strong>Email:</strong> <a href="mailto:john@johnggrundy.com">john@johnggrundy.com</a>
+    </p>
+    <p class="note" style="margin:0;">I do not offer promotional endorsements, scientific white-labeling, or outcome guarantees.</p>
+  </section>
+</main>
+
+<footer>
+  <div>© <span id="y"></span> John G. Grundy. Scientific Diligence &amp; Independent Review.</div>
+  <div style="margin-top:8px;">This site describes an independent review service. It does not provide legal, investment, medical, or clinical advice.</div>
 </footer>
+
 <script>
-    document.getElementById("y").textContent = new Date().getFullYear();
-  </script>
+  document.getElementById("y").textContent = new Date().getFullYear();
+</script>
 </body>
 </html>
