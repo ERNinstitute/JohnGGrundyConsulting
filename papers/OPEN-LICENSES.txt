@@ -1,0 +1,13 @@
+Locally hosted open-access publisher PDFs
+
+1. hamilton-et-al-2026-wmh-cognitive-reserve.pdf
+   Cognitive reserve is associated with less cognitive decline from white matter hyperintensities.
+   Neurobiology of Aging 160 (2026), 1-9.
+   License: Creative Commons Attribution 4.0 International (CC BY 4.0).
+   Source DOI: https://doi.org/10.1016/j.neurobiolaging.2025.12.004
+
+2. grundy-2022-conflict-adaptation-mouse-tracking.pdf
+   The Specificity and Reliability of Conflict Adaptation: A Mouse-Tracking Study.
+   Frontiers in Psychology 12 (2022), 770509.
+   License: Creative Commons Attribution 4.0 International (CC BY 4.0).
+   Source DOI: https://doi.org/10.3389/fpsyg.2021.770509
